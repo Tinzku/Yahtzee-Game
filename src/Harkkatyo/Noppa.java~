@@ -1,0 +1,49 @@
+package yatzy;
+import java.util.Random;
+
+/** 
+ * Arpakuutiota mallintava luokka
+ * v0.2
+ * Lis‰tty int[] heitto ja sen mukaiset metodit
+ */
+public class Noppa {
+    
+    private int arpaluku;
+    private int[] heitto;
+    private static Random noppa = new Random();
+    
+    public Noppa() {
+    }
+    
+    /* Asettaa arvon ja palauttaa sen */
+    public int heitaNoppaa() {
+        arpaluku = noppa.nextInt(6) + 1;
+        return arpaluku;
+    }
+    
+    /* Asettaa nopan lukeman */
+    public void heita() {
+        arpaluku = noppa.nextInt(6) + 1;
+    }
+    
+    /* Palauttaa nopan lukeman */
+    public int annaArpaluku() {
+        return arpaluku;
+    }
+    
+    /** 
+     * Metodi heitt‰‰ noppaa n kertaa
+     * @param n Heittojen m‰‰r‰
+     * @return Arpaluvut taulukossa
+     */
+    public void heitaNoppia(int n) {
+        for (int i = 0; i < n; i++) {
+            heitto[i] = heitaNoppaa();
+        }
+    }
+    
+    /* Palauttaa heitettyjen noppien arvot */
+    public int[] annaHeitetyt() {
+        return lukitut;
+    }
+}

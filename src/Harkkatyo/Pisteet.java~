@@ -1,0 +1,11 @@
+package yatzy;
+import java.util.HashMap;
+
+public class Pisteet {
+    
+    private HashMap<String, Integer> pisteTaulukko;
+    
+    public Pisteet() {
+        this.pisteTaulukko = new HashMap<>();
+    }
+}

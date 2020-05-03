@@ -1,0 +1,1 @@
+Peli aloitetaan kansiosta "Pelaa", jonka j‰lkeen komentokehotteella komennolla "java -jar yatzy.jar". Pelin ohjeet voi tulostaa pelin p‰‰valikosta.
